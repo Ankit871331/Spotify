@@ -4,9 +4,36 @@
   let seekbar = document.querySelector(".seekbar")
   let songs = [];
 
+  const searchInput = document.getElementById("searchInput");
+  const cardContainer = document.getElementById("cardContainer");
+
+const cards = Array.from(cardContainer.getElementsByClassName("card"));
 
 
+searchInput.addEventListener("input", ()=> {
+  const query = searchInput.value.toLowerCase().trim();
+ 
+   cards.sort((a, b) => {
+      const aText = a.textContent.toLowerCase();
+      const bText = b.textContent.toLowerCase();
+      const aIndex = aText.indexOf(query);
+      const bIndex = bText.indexOf(query);
 
+      if (query === "") return 0; // keep original order
+      if (aIndex === -1 && bIndex === -1) return 0; // both not found
+      if (aIndex === -1) return 1; // a not found, b first
+      if (bIndex === -1) return -1; // b not found, a first
+      return aIndex - bIndex; // smaller index comes first
+    });
+
+        // show/hide based on match
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? "block" : "none";
+    });
+
+    cards.forEach(card => cardContainer.appendChild(card));
+})
 
 
 

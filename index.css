@@ -12,6 +12,10 @@ body{
     padding: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 .left{
     width: 22vw;
     background-color: black;
@@ -249,7 +253,7 @@ body{
     scrollbar-width: thin;
 }
 
-.cardContainer{
+#cardContainer{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
