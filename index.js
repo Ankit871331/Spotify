@@ -57,24 +57,6 @@ function secondsToMinutes(seconds) {
 
 
 
-// async function gatSongs(folder) {
-//     let a = await fetch(`/music/${folder}`)
-
-//     let response = await a.text()
-    
-//     let div = document.createElement("div");
-//     div.innerHTML = response;
-//     let as = div.getElementsByTagName("a")
-//     let songs = [];
-//     for(let index = 0; index < as.length; index++){
-//         let element = as[index];
-       
-//         if(element.href.endsWith(".mp3")){
-//             songs.push(element.href)
-//         }
-//     }
-//    return songs;
-// }
 
 
 async function gatSongs(folder) {
