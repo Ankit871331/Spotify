@@ -11,9 +11,9 @@ A responsive web application that replicates the Spotify user interface, allowin
 ## 🛠️ Tech Stack
 * **HTML5**: For structured content.
 * **CSS3**: For custom styling, Flexbox, and Grid layouts.
-* **JavaScript (Optional/Planned)**: For interactive playback logic.
+* **JavaScript**: For interactive playback logic.
 
-## 📸 Preview
+## 🌐 Live Preview
 
 https://spotify-ankit.netlify.app/
 
