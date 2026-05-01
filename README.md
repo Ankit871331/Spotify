@@ -1,6 +1,6 @@
 # Spotify Clone 🎵
 
-A responsive web application that replicates the Spotify user interface, allowing users to browse and interact with music playlists. This project focuses on clean UI/UX design using modern web technologies.
+A responsive web application that replicates the Spotify, allowing users to browse and interact with music playlists. This project focuses on clean UI/UX design using modern web technologies.
 
 ## 🚀 Features
 * **Dynamic Sidebar**: Navigation for Home, Search, and Library.
